@@ -1,0 +1,710 @@
+{
+  "total_rows": 10972462,
+  "n1_gps_zero": {
+    "count": 83,
+    "rate": 8e-06,
+    "affected_vehicles": [
+      27308,
+      28587,
+      301964
+    ]
+  },
+  "n2_distanz_spike": {
+    "count": 31609,
+    "rate": 0.002881
+  },
+  "n3_distanz_small_drop": {
+    "count": 87415,
+    "rate": 0.007967
+  },
+  "n4_lage_extreme": {
+    "count": 63732,
+    "rate": 0.005808
+  },
+  "n5_lage_default_zero": {
+    "count": 266788,
+    "rate": 0.024314,
+    "by_status": [
+      {
+        "status_text": "posUnklar",
+        "len": 170661
+      },
+      {
+        "status_text": "verlRoute",
+        "len": 37881
+      },
+      {
+        "status_text": "vvo",
+        "len": 30586
+      },
+      {
+        "status_text": "ohneFahrt",
+        "len": 27635
+      },
+      {
+        "status_text": "keinFunk",
+        "len": 25
+      }
+    ]
+  },
+  "n6_bad_status": {
+    "count": 199225,
+    "rate": 0.018157,
+    "by_status": [
+      {
+        "status_text": "posUnklar",
+        "len": 170666
+      },
+      {
+        "status_text": "ohneFahrt",
+        "len": 28534
+      },
+      {
+        "status_text": "keinFunk",
+        "len": 25
+      }
+    ]
+  },
+  "noisy_union_count": 266788,
+  "noisy_union_rate": 0.024314,
+  "noisy_by_line": [
+    {
+      "linie": 60,
+      "total_rows": 59053,
+      "n1_count": 0,
+      "n2_count": 10,
+      "n4_count": 0,
+      "n5_count": 59053,
+      "n6_count": 36086,
+      "any_noisy_count": 59053,
+      "noisy_rate": 1.0
+    },
+    {
+      "linie": 59,
+      "total_rows": 57130,
+      "n1_count": 0,
+      "n2_count": 0,
+      "n4_count": 0,
+      "n5_count": 57130,
+      "n6_count": 42223,
+      "any_noisy_count": 57130,
+      "noisy_rate": 1.0
+    },
+    {
+      "linie": 103,
+      "total_rows": 221,
+      "n1_count": 0,
+      "n2_count": 6,
+      "n4_count": 16,
+      "n5_count": 44,
+      "n6_count": 44,
+      "any_noisy_count": 66,
+      "noisy_rate": 0.2986425339366516
+    },
+    {
+      "linie": 478,
+      "total_rows": 12129,
+      "n1_count": 0,
+      "n2_count": 0,
+      "n4_count": 0,
+      "n5_count": 2145,
+      "n6_count": 0,
+      "any_noisy_count": 2145,
+      "noisy_rate": 0.17684887459807075
+    },
+    {
+      "linie": 522,
+      "total_rows": 12767,
+      "n1_count": 0,
+      "n2_count": 0,
+      "n4_count": 55,
+      "n5_count": 2200,
+      "n6_count": 0,
+      "any_noisy_count": 2255,
+      "noisy_rate": 0.17662724210856112
+    },
+    {
+      "linie": 166,
+      "total_rows": 34312,
+      "n1_count": 0,
+      "n2_count": 50,
+      "n4_count": 603,
+      "n5_count": 4839,
+      "n6_count": 4430,
+      "any_noisy_count": 5550,
+      "noisy_rate": 0.16175099090697131
+    },
+    {
+      "linie": 228,
+      "total_rows": 7190,
+      "n1_count": 0,
+      "n2_count": 0,
+      "n4_count": 0,
+      "n5_count": 905,
+      "n6_count": 0,
+      "any_noisy_count": 905,
+      "noisy_rate": 0.1258692628650904
+    },
+    {
+      "linie": 477,
+      "total_rows": 36995,
+      "n1_count": 0,
+      "n2_count": 0,
+      "n4_count": 529,
+      "n5_count": 4063,
+      "n6_count": 0,
+      "any_noisy_count": 4592,
+      "noisy_rate": 0.12412488174077578
+    },
+    {
+      "linie": 366,
+      "total_rows": 5372,
+      "n1_count": 77,
+      "n2_count": 0,
+      "n4_count": 37,
+      "n5_count": 485,
+      "n6_count": 0,
+      "any_noisy_count": 595,
+      "noisy_rate": 0.11075949367088607
+    },
+    {
+      "linie": 83,
+      "total_rows": 13470,
+      "n1_count": 0,
+      "n2_count": 0,
+      "n4_count": 95,
+      "n5_count": 1244,
+      "n6_count": 0,
+      "any_noisy_count": 1339,
+      "noisy_rate": 0.0994060876020787
+    },
+    {
+      "linie": 98,
+      "total_rows": 18733,
+      "n1_count": 3,
+      "n2_count": 0,
+      "n4_count": 165,
+      "n5_count": 1589,
+      "n6_count": 0,
+      "any_noisy_count": 1756,
+      "noisy_rate": 0.09373832274595634
+    },
+    {
+      "linie": 162,
+      "total_rows": 34823,
+      "n1_count": 0,
+      "n2_count": 0,
+      "n4_count": 481,
+      "n5_count": 2644,
+      "n6_count": 0,
+      "any_noisy_count": 3125,
+      "noisy_rate": 0.08973953995922235
+    },
+    {
+      "linie": 86,
+      "total_rows": 51934,
+      "n1_count": 0,
+      "n2_count": 0,
+      "n4_count": 167,
+      "n5_count": 3991,
+      "n6_count": 0,
+      "any_noisy_count": 4158,
+      "noisy_rate": 0.08006315708399123
+    },
+    {
+      "linie": 521,
+      "total_rows": 28955,
+      "n1_count": 0,
+      "n2_count": 0,
+      "n4_count": 49,
+      "n5_count": 2201,
+      "n6_count": 0,
+      "any_noisy_count": 2250,
+      "noisy_rate": 0.07770678639267829
+    },
+    {
+      "linie": 72,
+      "total_rows": 88564,
+      "n1_count": 0,
+      "n2_count": 131,
+      "n4_count": 179,
+      "n5_count": 6465,
+      "n6_count": 5884,
+      "any_noisy_count": 6774,
+      "noisy_rate": 0.07648706020504946
+    },
+    {
+      "linie": 77,
+      "total_rows": 105173,
+      "n1_count": 0,
+      "n2_count": 106,
+      "n4_count": 1728,
+      "n5_count": 6080,
+      "n6_count": 4343,
+      "any_noisy_count": 7913,
+      "noisy_rate": 0.07523794129672064
+    },
+    {
+      "linie": 386,
+      "total_rows": 8380,
+      "n1_count": 0,
+      "n2_count": 0,
+      "n4_count": 43,
+      "n5_count": 587,
+      "n6_count": 0,
+      "any_noisy_count": 630,
+      "noisy_rate": 0.07517899761336516
+    },
+    {
+      "linie": 108,
+      "total_rows": 148811,
+      "n1_count": 0,
+      "n2_count": 287,
+      "n4_count": 7511,
+      "n5_count": 3132,
+      "n6_count": 3132,
+      "any_noisy_count": 10915,
+      "noisy_rate": 0.07334807238712192
+    },
+    {
+      "linie": 520,
+      "total_rows": 21988,
+      "n1_count": 1,
+      "n2_count": 0,
+      "n4_count": 185,
+      "n5_count": 1347,
+      "n6_count": 0,
+      "any_noisy_count": 1533,
+      "noisy_rate": 0.06971984718937603
+    },
+    {
+      "linie": 93,
+      "total_rows": 6834,
+      "n1_count": 0,
+      "n2_count": 0,
+      "n4_count": 1,
+      "n5_count": 435,
+      "n6_count": 0,
+      "any_noisy_count": 436,
+      "noisy_rate": 0.06379865378987416
+    },
+    {
+      "linie": 88,
+      "total_rows": 81071,
+      "n1_count": 0,
+      "n2_count": 63,
+      "n4_count": 1402,
+      "n5_count": 2629,
+      "n6_count": 814,
+      "any_noisy_count": 4094,
+      "noisy_rate": 0.0504989453688742
+    },
+    {
+      "linie": 79,
+      "total_rows": 31331,
+      "n1_count": 0,
+      "n2_count": 60,
+      "n4_count": 236,
+      "n5_count": 1068,
+      "n6_count": 1068,
+      "any_noisy_count": 1364,
+      "noisy_rate": 0.04353515687338419
+    },
+    {
+      "linie": 84,
+      "total_rows": 44136,
+      "n1_count": 0,
+      "n2_count": 84,
+      "n4_count": 323,
+      "n5_count": 1461,
+      "n6_count": 1396,
+      "any_noisy_count": 1868,
+      "noisy_rate": 0.04232372666304151
+    },
+    {
+      "linie": 78,
+      "total_rows": 112047,
+      "n1_count": 0,
+      "n2_count": 1170,
+      "n4_count": 781,
+      "n5_count": 2383,
+      "n6_count": 2383,
+      "any_noisy_count": 4321,
+      "noisy_rate": 0.03856417396271208
+    },
+    {
+      "linie": 68,
+      "total_rows": 471027,
+      "n1_count": 0,
+      "n2_count": 1336,
+      "n4_count": 5437,
+      "n5_count": 10082,
+      "n6_count": 10116,
+      "any_noisy_count": 16872,
+      "noisy_rate": 0.035819602697934515
+    },
+    {
+      "linie": 112,
+      "total_rows": 110390,
+      "n1_count": 0,
+      "n2_count": 84,
+      "n4_count": 2380,
+      "n5_count": 1459,
+      "n6_count": 1486,
+      "any_noisy_count": 3927,
+      "noisy_rate": 0.03557387444514902
+    },
+    {
+      "linie": 74,
+      "total_rows": 31288,
+      "n1_count": 0,
+      "n2_count": 71,
+      "n4_count": 16,
+      "n5_count": 982,
+      "n6_count": 982,
+      "any_noisy_count": 1068,
+      "noisy_rate": 0.03413449245717208
+    },
+    {
+      "linie": 80,
+      "total_rows": 246485,
+      "n1_count": 0,
+      "n2_count": 448,
+      "n4_count": 1716,
+      "n5_count": 6207,
+      "n6_count": 6083,
+      "any_noisy_count": 8371,
+      "noisy_rate": 0.03396149867131874
+    },
+    {
+      "linie": 62,
+      "total_rows": 393961,
+      "n1_count": 0,
+      "n2_count": 917,
+      "n4_count": 1959,
+      "n5_count": 10058,
+      "n6_count": 10078,
+      "any_noisy_count": 12909,
+      "noisy_rate": 0.03276720284495166
+    },
+    {
+      "linie": 66,
+      "total_rows": 302639,
+      "n1_count": 0,
+      "n2_count": 851,
+      "n4_count": 570,
+      "n5_count": 7743,
+      "n6_count": 6155,
+      "any_noisy_count": 9219,
+      "noisy_rate": 0.030462035626604635
+    },
+    {
+      "linie": 81,
+      "total_rows": 65272,
+      "n1_count": 2,
+      "n2_count": 172,
+      "n4_count": 189,
+      "n5_count": 1631,
+      "n6_count": 1431,
+      "any_noisy_count": 1984,
+      "noisy_rate": 0.030395881848265718
+    },
+    {
+      "linie": 104,
+      "total_rows": 231472,
+      "n1_count": 0,
+      "n2_count": 950,
+      "n4_count": 722,
+      "n5_count": 5173,
+      "n6_count": 5173,
+      "any_noisy_count": 6816,
+      "noisy_rate": 0.029446326121517936
+    },
+    {
+      "linie": 63,
+      "total_rows": 549875,
+      "n1_count": 0,
+      "n2_count": 1570,
+      "n4_count": 3335,
+      "n5_count": 10161,
+      "n6_count": 10179,
+      "any_noisy_count": 14945,
+      "noisy_rate": 0.02717890429643101
+    },
+    {
+      "linie": 89,
+      "total_rows": 17683,
+      "n1_count": 0,
+      "n2_count": 80,
+      "n4_count": 0,
+      "n5_count": 394,
+      "n6_count": 363,
+      "any_noisy_count": 474,
+      "noisy_rate": 0.026805406322456597
+    },
+    {
+      "linie": 65,
+      "total_rows": 312097,
+      "n1_count": 0,
+      "n2_count": 1008,
+      "n4_count": 2713,
+      "n5_count": 4313,
+      "n6_count": 4337,
+      "any_noisy_count": 7853,
+      "noisy_rate": 0.025162048978362495
+    },
+    {
+      "linie": 70,
+      "total_rows": 257420,
+      "n1_count": 0,
+      "n2_count": 568,
+      "n4_count": 359,
+      "n5_count": 5560,
+      "n6_count": 5577,
+      "any_noisy_count": 6471,
+      "noisy_rate": 0.02513790692253904
+    },
+    {
+      "linie": 106,
+      "total_rows": 167342,
+      "n1_count": 0,
+      "n2_count": 760,
+      "n4_count": 441,
+      "n5_count": 2981,
+      "n6_count": 2981,
+      "any_noisy_count": 4182,
+      "noisy_rate": 0.024990737531522273
+    },
+    {
+      "linie": 85,
+      "total_rows": 124017,
+      "n1_count": 0,
+      "n2_count": 258,
+      "n4_count": 98,
+      "n5_count": 2522,
+      "n6_count": 2572,
+      "any_noisy_count": 2927,
+      "noisy_rate": 0.023601603006039494
+    },
+    {
+      "linie": 61,
+      "total_rows": 653320,
+      "n1_count": 0,
+      "n2_count": 2309,
+      "n4_count": 1917,
+      "n5_count": 9216,
+      "n6_count": 9297,
+      "any_noisy_count": 13511,
+      "noisy_rate": 0.020680524092328414
+    },
+    {
+      "linie": 87,
+      "total_rows": 79471,
+      "n1_count": 0,
+      "n2_count": 177,
+      "n4_count": 852,
+      "n5_count": 483,
+      "n6_count": 597,
+      "any_noisy_count": 1622,
+      "noisy_rate": 0.02040996086622793
+    },
+    {
+      "linie": 90,
+      "total_rows": 129360,
+      "n1_count": 0,
+      "n2_count": 418,
+      "n4_count": 554,
+      "n5_count": 1254,
+      "n6_count": 1433,
+      "any_noisy_count": 2309,
+      "noisy_rate": 0.017849412492269637
+    },
+    {
+      "linie": 113,
+      "total_rows": 223723,
+      "n1_count": 0,
+      "n2_count": 673,
+      "n4_count": 897,
+      "n5_count": 2192,
+      "n6_count": 2192,
+      "any_noisy_count": 3733,
+      "noisy_rate": 0.01668581236618497
+    },
+    {
+      "linie": 6,
+      "total_rows": 367262,
+      "n1_count": 0,
+      "n2_count": 927,
+      "n4_count": 2494,
+      "n5_count": 2475,
+      "n6_count": 2475,
+      "any_noisy_count": 5895,
+      "noisy_rate": 0.01605121139676852
+    },
+    {
+      "linie": 12,
+      "total_rows": 338422,
+      "n1_count": 0,
+      "n2_count": 1218,
+      "n4_count": 1485,
+      "n5_count": 2722,
+      "n6_count": 2722,
+      "any_noisy_count": 5228,
+      "noisy_rate": 0.015448168263292575
+    },
+    {
+      "linie": 1,
+      "total_rows": 349297,
+      "n1_count": 0,
+      "n2_count": 993,
+      "n4_count": 3112,
+      "n5_count": 582,
+      "n6_count": 582,
+      "any_noisy_count": 4675,
+      "noisy_rate": 0.01338402562861977
+    },
+    {
+      "linie": 64,
+      "total_rows": 467879,
+      "n1_count": 0,
+      "n2_count": 1329,
+      "n4_count": 4188,
+      "n5_count": 680,
+      "n6_count": 680,
+      "any_noisy_count": 5931,
+      "noisy_rate": 0.012676354356575097
+    },
+    {
+      "linie": 73,
+      "total_rows": 30578,
+      "n1_count": 0,
+      "n2_count": 98,
+      "n4_count": 0,
+      "n5_count": 281,
+      "n6_count": 283,
+      "any_noisy_count": 381,
+      "noisy_rate": 0.012459938517888678
+    },
+    {
+      "linie": 4,
+      "total_rows": 742352,
+      "n1_count": 0,
+      "n2_count": 1470,
+      "n4_count": 4427,
+      "n5_count": 2205,
+      "n6_count": 2203,
+      "any_noisy_count": 8020,
+      "noisy_rate": 0.010803500226307735
+    },
+    {
+      "linie": 7,
+      "total_rows": 604504,
+      "n1_count": 0,
+      "n2_count": 2485,
+      "n4_count": 2242,
+      "n5_count": 1568,
+      "n6_count": 1568,
+      "any_noisy_count": 6162,
+      "noisy_rate": 0.010193480936437144
+    },
+    {
+      "linie": 10,
+      "total_rows": 256214,
+      "n1_count": 0,
+      "n2_count": 1115,
+      "n4_count": 1256,
+      "n5_count": 265,
+      "n6_count": 265,
+      "any_noisy_count": 2482,
+      "noisy_rate": 0.009687214594050286
+    },
+    {
+      "linie": 92,
+      "total_rows": 28947,
+      "n1_count": 0,
+      "n2_count": 263,
+      "n4_count": 11,
+      "n5_count": 6,
+      "n6_count": 6,
+      "any_noisy_count": 277,
+      "noisy_rate": 0.009569212699070715
+    },
+    {
+      "linie": 13,
+      "total_rows": 318984,
+      "n1_count": 0,
+      "n2_count": 1036,
+      "n4_count": 910,
+      "n5_count": 1048,
+      "n6_count": 1048,
+      "any_noisy_count": 2946,
+      "noisy_rate": 0.00923557294409751
+    },
+    {
+      "linie": 9,
+      "total_rows": 281259,
+      "n1_count": 0,
+      "n2_count": 1001,
+      "n4_count": 1050,
+      "n5_count": 567,
+      "n6_count": 587,
+      "any_noisy_count": 2412,
+      "noisy_rate": 0.008575725576781544
+    },
+    {
+      "linie": 3,
+      "total_rows": 443907,
+      "n1_count": 0,
+      "n2_count": 1011,
+      "n4_count": 1091,
+      "n5_count": 1562,
+      "n6_count": 1562,
+      "any_noisy_count": 3643,
+      "noisy_rate": 0.00820667392043829
+    },
+    {
+      "linie": 11,
+      "total_rows": 560463,
+      "n1_count": 0,
+      "n2_count": 2263,
+      "n4_count": 1268,
+      "n5_count": 1076,
+      "n6_count": 1189,
+      "any_noisy_count": 4471,
+      "noisy_rate": 0.007977333026444208
+    },
+    {
+      "linie": 8,
+      "total_rows": 281017,
+      "n1_count": 0,
+      "n2_count": 968,
+      "n4_count": 458,
+      "n5_count": 520,
+      "n6_count": 520,
+      "any_noisy_count": 1928,
+      "noisy_rate": 0.006860794898529271
+    },
+    {
+      "linie": 47,
+      "total_rows": 77936,
+      "n1_count": 0,
+      "n2_count": 400,
+      "n4_count": 44,
+      "n5_count": 13,
+      "n6_count": 13,
+      "any_noisy_count": 445,
+      "noisy_rate": 0.005709813180045166
+    },
+    {
+      "linie": 2,
+      "total_rows": 435180,
+      "n1_count": 0,
+      "n2_count": 415,
+      "n4_count": 955,
+      "n5_count": 687,
+      "n6_count": 687,
+      "any_noisy_count": 2057,
+      "noisy_rate": 0.004726779723332874
+    }
+  ]
+}

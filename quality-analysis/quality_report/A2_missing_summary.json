@@ -1,0 +1,565 @@
+{
+  "total_rows": 10972462,
+  "field_missing": [
+    {
+      "column": "distanz",
+      "group": "core",
+      "null_count": 0,
+      "null_rate": 0.0
+    },
+    {
+      "column": "tuerkriterium",
+      "group": "core",
+      "null_count": 0,
+      "null_rate": 0.0
+    },
+    {
+      "column": "fahrt_id",
+      "group": "core",
+      "null_count": 0,
+      "null_rate": 0.0
+    },
+    {
+      "column": "ort_nr_start",
+      "group": "core",
+      "null_count": 0,
+      "null_rate": 0.0
+    },
+    {
+      "column": "lage",
+      "group": "analysis",
+      "null_count": 0,
+      "null_rate": 0.0
+    },
+    {
+      "column": "besetztgrad",
+      "group": "analysis",
+      "null_count": 0,
+      "null_rate": 0.0
+    },
+    {
+      "column": "pos_lat",
+      "group": "analysis",
+      "null_count": 0,
+      "null_rate": 0.0
+    },
+    {
+      "column": "pos_lon",
+      "group": "analysis",
+      "null_count": 0,
+      "null_rate": 0.0
+    },
+    {
+      "column": "linie_text",
+      "group": "secondary",
+      "null_count": 235765,
+      "null_rate": 0.021487
+    },
+    {
+      "column": "zieltext",
+      "group": "secondary",
+      "null_count": 235765,
+      "null_rate": 0.021487
+    },
+    {
+      "column": "status_text",
+      "group": "secondary",
+      "null_count": 0,
+      "null_rate": 0.0
+    },
+    {
+      "column": "topic",
+      "group": "ignore",
+      "null_count": 0,
+      "null_rate": 0.0
+    },
+    {
+      "column": "qos",
+      "group": "ignore",
+      "null_count": 0,
+      "null_rate": 0.0
+    },
+    {
+      "column": "retain",
+      "group": "ignore",
+      "null_count": 0,
+      "null_rate": 0.0
+    },
+    {
+      "column": "payloadlen",
+      "group": "ignore",
+      "null_count": 0,
+      "null_rate": 0.0
+    }
+  ],
+  "core_completeness_rate": 1.0,
+  "trip_gap_count": 9536,
+  "trip_gap_rate": 0.000869,
+  "affected_trips": 5130,
+  "missing_by_line": [
+    {
+      "linie": 1,
+      "total_rows": 349297,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 2,
+      "total_rows": 435180,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 3,
+      "total_rows": 443907,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 4,
+      "total_rows": 742352,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 6,
+      "total_rows": 367262,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 7,
+      "total_rows": 604504,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 8,
+      "total_rows": 281017,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 9,
+      "total_rows": 281259,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 10,
+      "total_rows": 256214,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 11,
+      "total_rows": 560463,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 12,
+      "total_rows": 338422,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 13,
+      "total_rows": 318984,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 47,
+      "total_rows": 77936,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 59,
+      "total_rows": 57130,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 60,
+      "total_rows": 59053,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 61,
+      "total_rows": 653320,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 62,
+      "total_rows": 393961,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 63,
+      "total_rows": 549875,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 64,
+      "total_rows": 467879,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 65,
+      "total_rows": 312097,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 66,
+      "total_rows": 302639,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 68,
+      "total_rows": 471027,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 70,
+      "total_rows": 257420,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 72,
+      "total_rows": 88564,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 73,
+      "total_rows": 30578,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 74,
+      "total_rows": 31288,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 77,
+      "total_rows": 105173,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 78,
+      "total_rows": 112047,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 79,
+      "total_rows": 31331,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 80,
+      "total_rows": 246485,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 81,
+      "total_rows": 65272,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 83,
+      "total_rows": 13470,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 84,
+      "total_rows": 44136,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 85,
+      "total_rows": 124017,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 86,
+      "total_rows": 51934,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 87,
+      "total_rows": 79471,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 88,
+      "total_rows": 81071,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 89,
+      "total_rows": 17683,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 90,
+      "total_rows": 129360,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 92,
+      "total_rows": 28947,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 93,
+      "total_rows": 6834,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 98,
+      "total_rows": 18733,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 103,
+      "total_rows": 221,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 104,
+      "total_rows": 231472,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 106,
+      "total_rows": 167342,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 108,
+      "total_rows": 148811,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 112,
+      "total_rows": 110390,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 113,
+      "total_rows": 223723,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 162,
+      "total_rows": 34823,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 166,
+      "total_rows": 34312,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 228,
+      "total_rows": 7190,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 366,
+      "total_rows": 5372,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 386,
+      "total_rows": 8380,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 477,
+      "total_rows": 36995,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 478,
+      "total_rows": 12129,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 520,
+      "total_rows": 21988,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 521,
+      "total_rows": 28955,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    },
+    {
+      "linie": 522,
+      "total_rows": 12767,
+      "distanz_null_rate": 0.0,
+      "tuerkriterium_null_rate": 0.0,
+      "fahrt_id_null_rate": 0.0,
+      "ort_nr_start_null_rate": 0.0
+    }
+  ]
+}
