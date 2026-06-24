@@ -1,0 +1,23 @@
+{
+  "test_date": "2025-08-03",
+  "valid_dates": [
+    "2025-08-01",
+    "2025-08-02"
+  ],
+  "n_train": 572325,
+  "n_valid": 266479,
+  "n_test": 113519,
+  "features": [
+    "dwell_time",
+    "delay_calculated_sec",
+    "stop_index",
+    "besetztgrad",
+    "linie",
+    "ort_nr_start",
+    "stop_status",
+    "is_peak_hour",
+    "is_workday",
+    "hour_of_day",
+    "day_of_week"
+  ]
+}

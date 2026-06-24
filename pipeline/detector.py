@@ -75,9 +75,12 @@ def detect_stop_events(raw_df: pl.DataFrame) -> pl.DataFrame:
             .select("row_idx").to_series().to_list()
         )
 
-        for drop_idx in vdrops:
-            lo = max(0, drop_idx - n)
-            hi = min(max_idx, drop_idx + n)
+        for i, drop_idx in enumerate(vdrops):
+            prev_drop = vdrops[i - 1] if i > 0              else None
+            next_drop = vdrops[i + 1] if i < len(vdrops) - 1 else None
+
+            lo = max(0,        drop_idx - n, (prev_drop + 1) if prev_drop is not None else 0)
+            hi = min(max_idx,  drop_idx + n, (next_drop - 1) if next_drop is not None else max_idx)
 
             window = rows[lo: hi + 1]
 
@@ -85,6 +88,7 @@ def detect_stop_events(raw_df: pl.DataFrame) -> pl.DataFrame:
             door_open_count     = 0
             door_close_count    = 0
             open_door_positions = []
+            first_open_time     = None
             last_close_time     = None
 
             for j in range(1, len(window)):
@@ -93,9 +97,12 @@ def detect_stop_events(raw_df: pl.DataFrame) -> pl.DataFrame:
                 if prev == False and curr == True:
                     door_open_count += 1
                     open_door_positions.append(j)
+                    if first_open_time is None:
+                        first_open_time = window[j]["tst_iso"]
                 if prev == True and curr == False:
                     door_close_count += 1
-                    last_close_time = window[j]["tst_iso"]
+                    if first_open_time is not None:
+                        last_close_time = window[j]["tst_iso"]
 
             # ── drop 前后一行的门状态检测 ─────────────────────
             row_before     = rows[max(0, drop_idx - 1)]["tuerkriterium"]
@@ -128,7 +135,8 @@ def detect_stop_events(raw_df: pl.DataFrame) -> pl.DataFrame:
                 is_true_multi_door = all_pairs_valid
 
             # ── arrival / departure 时间 ──────────────────────
-            arrival_time   = rows[drop_idx]["tst_iso"]
+            # normal / multi_door: arrival = first door open (0→1); no_door: arrival = distanz drop
+            arrival_time   = first_open_time if first_open_time is not None else rows[drop_idx]["tst_iso"]
             departure_time = last_close_time if last_close_time is not None else arrival_time
 
             distanz_vals = [r["distanz"] for r in window]

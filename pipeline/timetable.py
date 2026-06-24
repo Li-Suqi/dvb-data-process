@@ -151,14 +151,17 @@ def match_and_compute_delay(
     ])
 
     # Step 5: 计算dwell_time（秒）
-    # normal / no_door / multi_door 统一都是 departure - arrival
-    # multi_door的departure已经是最后一次关门时刻（detector保证）
+    # no_door：无法计算，输出 -1 作为哨兵值
+    # normal / multi_door：departure - arrival（门关 - 门开）
     matched = matched.with_columns(
-        (
+        pl.when(pl.col("stop_status") == "no_door")
+        .then(pl.lit(-1.0))
+        .otherwise(
             (pl.col("departure_time").cast(pl.Int64) -
              pl.col("arrival_time").cast(pl.Int64))
             / 1_000_000
-        ).alias("dwell_time")
+        )
+        .alias("dwell_time")
     )
 
     # Step 6: 计算travel_time（秒）

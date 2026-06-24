@@ -1,0 +1,41 @@
+{
+  "test_date": "2025-08-03",
+  "configs": {
+    "Full": {
+      "variant1": {
+        "mae": 16.7291,
+        "rmse": 32.3327
+      },
+      "variant2": {
+        "mae": 16.9314,
+        "rmse": 32.7508
+      },
+      "rmse_improvement_pct": 1.2765,
+      "mae_improvement_pct": 1.1945
+    },
+    "No-location": {
+      "variant1": {
+        "mae": 23.2744,
+        "rmse": 36.9413
+      },
+      "variant2": {
+        "mae": 23.4588,
+        "rmse": 37.3426
+      },
+      "rmse_improvement_pct": 1.0747,
+      "mae_improvement_pct": 0.7859
+    },
+    "Ops-only": {
+      "variant1": {
+        "mae": 25.6591,
+        "rmse": 39.5841
+      },
+      "variant2": {
+        "mae": 25.8031,
+        "rmse": 39.8148
+      },
+      "rmse_improvement_pct": 0.5794,
+      "mae_improvement_pct": 0.5578
+    }
+  }
+}

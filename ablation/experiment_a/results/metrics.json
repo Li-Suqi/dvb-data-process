@@ -1,0 +1,13 @@
+{
+  "test_date": "2025-08-03",
+  "variant1": {
+    "mae": 23.2744,
+    "rmse": 36.9413
+  },
+  "variant2": {
+    "mae": 23.4588,
+    "rmse": 37.3426
+  },
+  "rmse_improvement_pct": 1.0747,
+  "mae_improvement_pct": 0.7859
+}
