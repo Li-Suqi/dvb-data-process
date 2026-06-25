@@ -1,0 +1,188 @@
+{
+  "total_rows": 4980084,
+  "n1_gps_zero": {
+    "count": 0,
+    "rate": 0.0,
+    "affected_vehicles": []
+  },
+  "n2_distanz_spike": {
+    "count": 14896,
+    "rate": 0.002991
+  },
+  "n3_distanz_small_drop": {
+    "count": 2842,
+    "rate": 0.000571
+  },
+  "n4_lage_extreme": {
+    "count": 20601,
+    "rate": 0.004137
+  },
+  "n5_lage_default_zero": {
+    "count": 15178,
+    "rate": 0.003048,
+    "by_status": [
+      {
+        "status_text": "posUnklar",
+        "len": 15058
+      },
+      {
+        "status_text": "ohneFahrt",
+        "len": 116
+      },
+      {
+        "status_text": "verlRoute",
+        "len": 4
+      }
+    ]
+  },
+  "n6_bad_status": {
+    "count": 15309,
+    "rate": 0.003074,
+    "by_status": [
+      {
+        "status_text": "posUnklar",
+        "len": 15059
+      },
+      {
+        "status_text": "ohneFahrt",
+        "len": 250
+      }
+    ]
+  },
+  "noisy_union_count": 20601,
+  "noisy_union_rate": 0.004137,
+  "noisy_by_line": [
+    {
+      "linie": 6,
+      "total_rows": 367128,
+      "n1_count": 0,
+      "n2_count": 928,
+      "n4_count": 2331,
+      "n5_count": 2475,
+      "n6_count": 2475,
+      "any_noisy_count": 5733,
+      "noisy_rate": 0.015615807020984506
+    },
+    {
+      "linie": 12,
+      "total_rows": 338389,
+      "n1_count": 0,
+      "n2_count": 1220,
+      "n4_count": 1483,
+      "n5_count": 2699,
+      "n6_count": 2699,
+      "any_noisy_count": 5205,
+      "noisy_rate": 0.015381705670101569
+    },
+    {
+      "linie": 1,
+      "total_rows": 349323,
+      "n1_count": 0,
+      "n2_count": 993,
+      "n4_count": 3112,
+      "n5_count": 582,
+      "n6_count": 582,
+      "any_noisy_count": 4675,
+      "noisy_rate": 0.013383029459840892
+    },
+    {
+      "linie": 4,
+      "total_rows": 742168,
+      "n1_count": 0,
+      "n2_count": 1465,
+      "n4_count": 4427,
+      "n5_count": 2149,
+      "n6_count": 2147,
+      "any_noisy_count": 7959,
+      "noisy_rate": 0.010723987021806384
+    },
+    {
+      "linie": 7,
+      "total_rows": 605653,
+      "n1_count": 0,
+      "n2_count": 2489,
+      "n4_count": 2269,
+      "n5_count": 1561,
+      "n6_count": 1561,
+      "any_noisy_count": 6184,
+      "noisy_rate": 0.010210467049614218
+    },
+    {
+      "linie": 10,
+      "total_rows": 256220,
+      "n1_count": 0,
+      "n2_count": 1117,
+      "n4_count": 1263,
+      "n5_count": 265,
+      "n6_count": 265,
+      "any_noisy_count": 2491,
+      "noisy_rate": 0.009722113808445867
+    },
+    {
+      "linie": 13,
+      "total_rows": 319039,
+      "n1_count": 0,
+      "n2_count": 1033,
+      "n4_count": 910,
+      "n5_count": 1068,
+      "n6_count": 1068,
+      "any_noisy_count": 2963,
+      "noisy_rate": 0.009287265820166186
+    },
+    {
+      "linie": 9,
+      "total_rows": 281259,
+      "n1_count": 0,
+      "n2_count": 1001,
+      "n4_count": 1050,
+      "n5_count": 567,
+      "n6_count": 587,
+      "any_noisy_count": 2412,
+      "noisy_rate": 0.008575725576781544
+    },
+    {
+      "linie": 3,
+      "total_rows": 443862,
+      "n1_count": 0,
+      "n2_count": 1010,
+      "n4_count": 1091,
+      "n5_count": 1562,
+      "n6_count": 1562,
+      "any_noisy_count": 3642,
+      "noisy_rate": 0.008205252984035578
+    },
+    {
+      "linie": 11,
+      "total_rows": 560370,
+      "n1_count": 0,
+      "n2_count": 2258,
+      "n4_count": 1268,
+      "n5_count": 1076,
+      "n6_count": 1189,
+      "any_noisy_count": 4466,
+      "noisy_rate": 0.00796973428270607
+    },
+    {
+      "linie": 8,
+      "total_rows": 281456,
+      "n1_count": 0,
+      "n2_count": 967,
+      "n4_count": 456,
+      "n5_count": 514,
+      "n6_count": 514,
+      "any_noisy_count": 1919,
+      "noisy_rate": 0.00681811721903246
+    },
+    {
+      "linie": 2,
+      "total_rows": 435217,
+      "n1_count": 0,
+      "n2_count": 415,
+      "n4_count": 941,
+      "n5_count": 660,
+      "n6_count": 660,
+      "any_noisy_count": 2016,
+      "noisy_rate": 0.004632171996957839
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "total_rows": 4980084,
+  "hard_dup_count": 0,
+  "hard_dup_rate": 0.0,
+  "soft_dup_extra_rows": 0,
+  "soft_dup_affected_groups": 0,
+  "soft_dup_rate": 0.0,
+  "soft_dup_by_line": []
+}
