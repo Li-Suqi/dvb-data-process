@@ -113,15 +113,26 @@ def match_and_compute_delay(
         ])
     )
 
-    # Step 2: 与时刻表关联
+    # Step 2: 与时刻表关联，以 service_date 为额外 join key 防止跨日错误匹配
+    # service_date = (time - 4h).date()，使跨午夜运行（如 23:50→00:10）归入同一服务日
     tt_clean = timetable.with_columns(
         pl.col("scheduled_arrival_time").dt.replace_time_zone("UTC")
+    ).with_columns(
+        (pl.col("scheduled_arrival_time") - pl.duration(hours=4))
+        .dt.date()
+        .alias("service_date")
+    )
+
+    drop_info = drop_info.with_columns(
+        (pl.col("arrival_time") - pl.duration(hours=4))
+        .dt.date()
+        .alias("service_date")
     )
 
     matched = drop_info.join(
-        tt_clean.select(["fahrt_id", "stop_index", "ort_nr", "scheduled_arrival_time"]),
-        left_on  = ["fahrt_id", "ort_nr_start"],
-        right_on = ["fahrt_id", "ort_nr"],
+        tt_clean.select(["fahrt_id", "stop_index", "ort_nr", "scheduled_arrival_time", "service_date"]),
+        left_on  = ["fahrt_id", "ort_nr_start", "service_date"],
+        right_on = ["fahrt_id", "ort_nr",        "service_date"],
         how      = "left",
     )
 
@@ -149,6 +160,41 @@ def match_and_compute_delay(
         ).alias("delay_calculated_sec"),
         pl.col("lage").alias("delay_recorded_sec"),
     ])
+
+    # Step 4b: 去重 — 同一辆车匹配到同一时刻表记录时，normal 优先于 no_door
+    # key: (fzg_id, fahrt_id, ort_nr_start, service_date)
+    # 优先级: normal=0 > multi_door=1 > no_door=2
+    _before_dedup = len(matched)
+    matched = (
+        matched
+        .with_columns(
+            pl.when(pl.col("stop_status") == "normal").then(pl.lit(0, dtype=pl.Int8))
+            .when(pl.col("stop_status") == "multi_door").then(pl.lit(1, dtype=pl.Int8))
+            .otherwise(pl.lit(2, dtype=pl.Int8))
+            .alias("_status_pri")
+        )
+        .sort(["fzg_id", "fahrt_id", "ort_nr_start", "service_date", "_status_pri"])
+        .unique(subset=["fzg_id", "fahrt_id", "ort_nr_start", "service_date"], keep="first")
+        .drop("_status_pri")
+    )
+    _dedup_removed = _before_dedup - len(matched)
+    print(f"[dedup] Removed {_dedup_removed:,} collision events (normal kept over no_door)  →  {len(matched):,} remaining")
+
+    # Step 4c: 过滤跨日错误匹配
+    # 条件：delay_calculated_sec > 3600 且 |delay_calculated - delay_recorded| > 3000
+    # 两者同时满足说明计算延误异常大且与车载上报值严重不符，极可能是跨日匹配错误
+    _before_crossday = len(matched)
+    matched = matched.filter(
+        ~(
+            (pl.col("delay_calculated_sec") > 3600) &
+            (
+                (pl.col("delay_calculated_sec") - pl.col("delay_recorded_sec"))
+                .abs() > 3000
+            )
+        )
+    )
+    _crossday_removed = _before_crossday - len(matched)
+    print(f"[crossday] Removed {_crossday_removed:,} cross-day mismatch rows  →  {len(matched):,} remaining")
 
     # Step 5: 计算dwell_time（秒）
     # no_door：无法计算，输出 -1 作为哨兵值
