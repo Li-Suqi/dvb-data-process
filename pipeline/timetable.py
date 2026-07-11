@@ -46,13 +46,14 @@ def expand_timetable(raw_tt: pl.DataFrame) -> pl.DataFrame:
 
         cumulative_sec = 0
         for stop_index, seg in enumerate(segments):
+            # Each segment identifies the next stop reached after its travel time.
+            cumulative_sec += seg.get("lenkzeit", 0)
             rows.append({
                 "fahrt_id":               int(trip_id),
                 "stop_index":             stop_index,
                 "ort_nr":                 seg.get("ort_nr"),
                 "scheduled_arrival_unix": dep_time_unix + cumulative_sec,
             })
-            cumulative_sec += seg.get("lenkzeit", 0)
 
     return (
         pl.DataFrame(rows)

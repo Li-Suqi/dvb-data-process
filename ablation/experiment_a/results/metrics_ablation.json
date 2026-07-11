@@ -3,39 +3,39 @@
   "configs": {
     "Full": {
       "variant1": {
-        "mae": 16.7291,
-        "rmse": 32.3327
+        "mae": 19.1089,
+        "rmse": 36.339
       },
       "variant2": {
-        "mae": 16.9314,
-        "rmse": 32.7508
+        "mae": 19.4727,
+        "rmse": 36.8195
       },
-      "rmse_improvement_pct": 1.2765,
-      "mae_improvement_pct": 1.1945
+      "rmse_improvement_pct": 1.305,
+      "mae_improvement_pct": 1.8683
     },
     "No-location": {
       "variant1": {
-        "mae": 23.2744,
-        "rmse": 36.9413
+        "mae": 24.0475,
+        "rmse": 39.6349
       },
       "variant2": {
-        "mae": 23.4588,
-        "rmse": 37.3426
+        "mae": 24.5235,
+        "rmse": 40.2525
       },
-      "rmse_improvement_pct": 1.0747,
-      "mae_improvement_pct": 0.7859
+      "rmse_improvement_pct": 1.5344,
+      "mae_improvement_pct": 1.9407
     },
     "Ops-only": {
       "variant1": {
-        "mae": 25.6591,
-        "rmse": 39.5841
+        "mae": 26.2754,
+        "rmse": 41.9252
       },
       "variant2": {
-        "mae": 25.8031,
-        "rmse": 39.8148
+        "mae": 26.5295,
+        "rmse": 42.1529
       },
-      "rmse_improvement_pct": 0.5794,
-      "mae_improvement_pct": 0.5578
+      "rmse_improvement_pct": 0.5401,
+      "mae_improvement_pct": 0.958
     }
   }
 }

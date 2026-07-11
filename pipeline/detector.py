@@ -113,24 +113,27 @@ def detect_stop_events(raw_df: pl.DataFrame) -> pl.DataFrame:
             # ── multi_door 真伪判断 ───────────────────────────
             is_true_multi_door = False
             if door_open_count >= 2:
-                all_pairs_valid = True
-                for k in range(len(open_door_positions) - 1):
-                    pos_a = open_door_positions[k]
-                    pos_b = open_door_positions[k + 1]
+                # A door close/reopen across a trip handover at a terminus is
+                # not a repeated door event at one stop.
+                all_pairs_valid = len({row["fahrt_id"] for row in window}) == 1
+                if all_pairs_valid:
+                    for k in range(len(open_door_positions) - 1):
+                        pos_a = open_door_positions[k]
+                        pos_b = open_door_positions[k + 1]
 
-                    between_distanz = [window[m]["distanz"] for m in range(pos_a, pos_b + 1)]
-                    between_deltas  = [
-                        between_distanz[m] - between_distanz[m - 1]
-                        for m in range(1, len(between_distanz))
-                    ]
+                        between_distanz = [window[m]["distanz"] for m in range(pos_a, pos_b + 1)]
+                        between_deltas  = [
+                            between_distanz[m] - between_distanz[m - 1]
+                            for m in range(1, len(between_distanz))
+                        ]
 
-                    has_drop         = len(between_deltas) > 0 and min(between_deltas) < -30
-                    distanz_growth   = max(between_distanz) - min(between_distanz)
-                    has_large_growth = distanz_growth >= DROP_THRESHOLD
+                        has_drop         = len(between_deltas) > 0 and min(between_deltas) < -30
+                        distanz_growth   = max(between_distanz) - min(between_distanz)
+                        has_large_growth = distanz_growth >= DROP_THRESHOLD
 
-                    if has_drop or has_large_growth:
-                        all_pairs_valid = False
-                        break
+                        if has_drop or has_large_growth:
+                            all_pairs_valid = False
+                            break
 
                 is_true_multi_door = all_pairs_valid
 
